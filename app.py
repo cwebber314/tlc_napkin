@@ -15,5 +15,9 @@ def hello_world():
 def hello_vue():
     return render_template('hello_vue.html')
 
+@app.route('/tlc_napkin')
+def tlc_napkin():
+    return render_template('tlc_napkin.html')
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
